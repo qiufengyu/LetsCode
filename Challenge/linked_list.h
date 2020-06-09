@@ -1,7 +1,8 @@
-#include <iostream>
-#include <string>
 #ifndef LINKED_LIST_H
 #define LINKED_LIST_H
+
+#include <iostream>
+#include <string>
 
 #include <sstream>
 #include <vector>
