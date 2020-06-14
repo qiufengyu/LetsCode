@@ -8,7 +8,6 @@
 #include <regex>
 #include <set>
 #include <stack>
-<<<<<<< HEAD
 #include <sstream>
 #include <string>
 #include <tuple>
@@ -17,11 +16,6 @@
 #include <utility>
 #include <vector>
 
-=======
-#include <set>
-#include <map>
-#include <algorithm>
->>>>>>> 74fd9c35f7a88bc5732bb998b0dec04c5131d530
 #include "linked_list.h"
 #include "binary_tree.h"
 
