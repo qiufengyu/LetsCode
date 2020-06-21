@@ -7,8 +7,8 @@
 #include <queue>
 #include <regex>
 #include <set>
-#include <stack>
 #include <sstream>
+#include <stack>
 #include <string>
 #include <tuple>
 #include <unordered_map>
@@ -21,7 +21,8 @@
 
 using namespace std;
 
-void print_vector(vector<vector<int>>& v) {
+template<class T>
+void print_vector(vector<vector<T>>& v) {
     cout << "[";
     for(int i = 0; i < v.size(); i++) {
         cout << "[";
