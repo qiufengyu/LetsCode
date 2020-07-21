@@ -1,3 +1,6 @@
+#ifndef HEADER_H
+#define HEADER_H
+
 #include <algorithm>
 #include <bitset>
 #include <chrono>
@@ -19,7 +22,7 @@
 #include "linked_list.h"
 #include "binary_tree.h"
 
-using namespace std;
+using std::vector;
 
 template<class T>
 void print_vector(vector<vector<T>>& v) {
@@ -34,3 +37,6 @@ void print_vector(vector<vector<T>>& v) {
     }
     cout << "]"<<endl;
 }
+
+
+#endif
