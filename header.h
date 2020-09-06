@@ -25,17 +25,29 @@
 using std::vector;
 
 template<class T>
+void print_vector(vector<T>& v) {
+    cout << "[";
+    for (int i = 0; i < v.size() - 1; i++) {
+        cout << v[i] << ",";
+    }
+    if (v.size() > 0) {
+        cout << v[v.size() - 1];
+    }
+    cout << "]" << endl;
+}
+
+template<class T>
 void print_vector(vector<vector<T>>& v) {
     cout << "[";
     for(int i = 0; i < v.size(); i++) {
         cout << "[";
         for(int j = 0; j < v[i].size() - 1; j++) {
-            cout << v[i][j] << ", ";
+            cout << v[i][j] << ",";
         }
         cout << v[i][v[i].size() - 1];
         cout << "],";
     }
-    cout << "]"<<endl;
+    cout << "]"<< endl;
 }
 
 
