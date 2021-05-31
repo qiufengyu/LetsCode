@@ -42,3 +42,14 @@ public:
         return true;
     }
 };
+
+int main() {
+    int n = 1;
+    Solution s;
+    while (n < 10) {
+        vector<vector<string>> res = s.solveNQueens(n);
+        cout << res.size() << endl;
+        ++n;
+    }
+    return 0;
+}
