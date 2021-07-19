@@ -62,4 +62,20 @@ void prettyPrintLinkedList(ListNode* node) {
   }
 }
 
+void prettyPrintLinkedListWithSize(ListNode* node, int size) {
+  int i = 0;
+  while (node && node->next && i < size) {
+      cout << node->val << "->";
+      node = node->next;
+      ++i;
+  }
+  if (i <= size) {
+    if (node) {
+      cout << node->val << endl;
+    } else {
+      cout << "Empty LinkedList" << endl;
+    }
+  }
+}
+
 #endif
