@@ -90,7 +90,7 @@ TreeNode* stringToTreeNode(string input) {
 
 void prettyPrintTree(TreeNode* node, string prefix = "", bool isLeft = true) {
     if (node == nullptr) {
-        cout << "Empty tree";
+        cout << "Empty tree" << endl;
         return;
     }
 

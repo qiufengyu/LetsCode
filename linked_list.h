@@ -33,6 +33,21 @@ vector<int> stringToIntegerVector(string input) {
     return output;
 }
 
+vector<string> stringToStringVector(string input) {
+  vector<string> output;
+    trimLeftTrailingSpaces(input);
+    trimRightTrailingSpaces(input);
+    input = input.substr(1, input.length() - 2);
+    stringstream ss;
+    ss.str(input);
+    string item;
+    char delim = ',';
+    while (getline(ss, item, delim)) {
+        output.push_back(item.substr(1, item.size()-2));
+    }
+    return output;
+}
+
 ListNode* stringToListNode(string input) {
     // Generate list from the input
     vector<int> list = stringToIntegerVector(input);
