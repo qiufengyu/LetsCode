@@ -46,7 +46,11 @@ void print_vector(vector<vector<T>>& v) {
             cout << v[i][j] << ",";
         }
         cout << v[i][v[i].size() - 1];
-        cout << "],";
+        if (i == (int)(v.size() - 1)) {
+            cout << "]";
+        } else {
+            cout << "],";
+        }
     }
     cout << "]"<< endl;
 }
