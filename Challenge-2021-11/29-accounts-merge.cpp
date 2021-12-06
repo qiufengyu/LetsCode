@@ -37,11 +37,11 @@ public:
         }
         map<string, set<string>> emails;
         vector<vector<string>> res;
-        for (auto p: m) {
+        for (auto& p: m) {
             emails[get(p.second)].insert(p.first);            
             // cout << n[p.first] << ": " << p.first << " -> " << p.second << endl;
         }
-        for (auto p: emails) {
+        for (auto& p: emails) {
             string name = n[p.first];
             vector<string> v {name};
             v.insert(v.end(), p.second.begin(), p.second.end());
