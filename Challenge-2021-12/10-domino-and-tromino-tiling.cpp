@@ -1,0 +1,20 @@
+#include "../header.h"
+
+const int M = 1000000007;
+
+class Solution {
+public:
+    int numTilings(int n) {
+        vector<long> res(n+1, 0L);
+        if (n <= 2) {
+            return n;
+        }
+        res[1] = 1;
+        res[2] = 2;
+        res[3] = 5;
+        for (int i = 4; i <= n; ++i) {
+            res[i] = ((res[i-3]) + (2 * res[i-1])) % M;
+        }
+        return res[n];        
+    }
+};
