@@ -46,7 +46,9 @@ void print_vector(vector<vector<T>>& v) {
         for(int j = 0; j < (int)v[i].size() - 1; j++) {
             cout << v[i][j] << ",";
         }
-        cout << v[i][v[i].size() - 1];
+        if (v[i].size() > 0) {
+            cout << v[i][v[i].size() - 1];
+        }
         if (i == (int)(v.size() - 1)) {
             cout << "]";
         } else {
