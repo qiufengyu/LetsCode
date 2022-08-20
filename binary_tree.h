@@ -16,6 +16,10 @@ struct TreeNode {
     TreeNode() : val(0), left(nullptr), right(nullptr) {}
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+    friend ostream &operator<< (ostream &output, const TreeNode &node ) { 
+        output << (node.val);
+        return output;            
+    }
 };
 
 string treeNodeToString(TreeNode* root) {
