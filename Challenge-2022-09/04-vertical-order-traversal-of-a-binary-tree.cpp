@@ -43,7 +43,7 @@ public:
             for (auto ee: es) {
                 v.push_back(ee.second);
             }
-            res.push_back(v)            ;
+            res.push_back(v);
         }
         return res;
     }
