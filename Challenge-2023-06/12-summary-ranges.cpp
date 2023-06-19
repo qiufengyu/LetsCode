@@ -12,7 +12,7 @@ public:
         }
         int start = nums[0], end = start;
         for (int i = 1; i < nums.size(); ++i) {
-            // nums[i] - 1 may have overflow
+            // nums[i] - end may have overflow
             if (nums[i] == 1 + end) {
                 end = nums[i];
             } else {
