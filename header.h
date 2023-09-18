@@ -43,7 +43,7 @@ void print_vector(vector<T>& v) {
 template<class T>
 void print_vector(vector<vector<T>>& v) {
     cout << "[";
-    for(int i = 0; i < v.size(); i++) {
+    for(int i = 0; i < (int)v.size(); i++) {
         cout << "[";
         for(int j = 0; j < (int)v[i].size() - 1; j++) {
             cout << v[i][j] << ",";
